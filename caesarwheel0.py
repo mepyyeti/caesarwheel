@@ -9,6 +9,7 @@ print(list(enumerate(base_wheel)))
 new_wheel = []
 
 spinner = random.randint(0,25)
+spinner_key = spinner
 
 #populate reorganized base_wheel
 for b in base_wheel:
@@ -23,8 +24,6 @@ new_word_list = []
 
 for k,v in list(enumerate(base_wheel)):
 	if v in my_letters:
-		print(f'k:{k}\nm:{v}\n\n')
 		new_word_list.append(new_wheel[k])
 
-print(new_word_list)
-print(''.join(new_word_list))
+print(f'key: {spinner_key}\nnewspelling: {new_word_list}\nnew word:  ' +''.join(new_word_list))
